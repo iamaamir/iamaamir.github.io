@@ -30,10 +30,22 @@
 
 
     .animate-pop-in {
-            animation: pop 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
-            animation-delay: .3s;
-            opacity: 0;
-        }
+        animation: pop 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+        opacity: 0;
+    }
+
+
+    .anim-delay-3 {
+        animation-delay: 0.3s;
+    }
+
+    .anim-delay-4 {
+        animation-delay: 0.4s;
+    }
+
+    .anim-delay-5 {
+        animation-delay: 0.5s;
+    }
 
     @keyframes pop {
         0% {
@@ -51,14 +63,14 @@
 
 <body>
     <div class="wrapper">
-        <h1 class="animate-pop-in"> Hey this is Aamir khan (New Delhi)</h1>
-        <p>
+        <h1 class="animate-pop-in anim-delay-3"> Hey this is Aamir khan (New Delhi)</h1>
+        <p class="animate-pop-in anim-delay-4">
             i am a FullStack Developer currently working on Blockchain Technology.
         </p>
-        <h1>
+        <h1 class="animate-pop-in anim-delay-4">
         	Find me on
         </h1>
-        <p>
+        <p class="animate-pop-in anim-delay-5">
             <a target = "_blank" href="https://www.linkedin.com/in/itsaamir/">
     		Linkedin
     	</a>|
