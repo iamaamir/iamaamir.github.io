@@ -4,23 +4,61 @@
     <title>
         Mohd Aamir khan
     </title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
     <style>
+    body {
+        background-color: #333333;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+    }
+
     .wrapper {
         max-width: 960px;
         margin: 5% auto;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 144px;
+    }
+
+    p {
+        font-size: 90px;
+    }
+
+
+    .animate-pop-in {
+            animation: pop 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+            animation-delay: .3s;
+            opacity: 0;
+        }
+
+    @keyframes pop {
+        0% {
+            opacity: 0;
+            transform: translateY(-4rem) scale(.8);
+        }
+
+        100% {
+            opacity: 1;
+            transform: none;
+        }
     }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <h1>Hey this is Aamir khan (New Delhi)</h1>
+        <h1 class="animate-pop-in"> Hey this is Aamir khan (New Delhi)</h1>
         <p>
-            i am a FullStack Developer currently working on Blockchain Technology
-            you can find me on
+            i am a FullStack Developer currently working on Blockchain Technology.
+        </p>
+        <h1>
+        	Find me on
+        </h1>
+        <p>
             <a target = "_blank" href="https://www.linkedin.com/in/itsaamir/">
     		Linkedin
     	</a>|
