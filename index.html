@@ -78,14 +78,27 @@ a:hover {
             transform: none;
         }
     }
+
+    .blink{
+    	animation: blink .6s linear  infinite alternate both;
+    }
+
+    @keyframes blink{
+    	from{
+    		opacity: 0;
+    	}
+    	to{
+    		opacity: 1;
+    	}
+    }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <h1 class="animate-pop-in anim-delay-3"> Hey this is Aamir khan (New Delhi)</h1>
+        <h1 class="animate-pop-in anim-delay-3"> Hey this is Aamir Khan (New Delhi)</h1>
         <p class="animate-pop-in anim-delay-4">
-            <strong>I</strong> am a FullStack Developer currently working on Blockchain Technology.
+            <strong class="blink">I</strong> am a FullStack Developer currently working on Blockchain Technology.
         </p>
         <h1 class="animate-pop-in anim-delay-4">
         	Find me on
